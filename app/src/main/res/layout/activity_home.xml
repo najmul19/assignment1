@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:layout_margin="20dp"
+
     tools:context=".home">
 
 
@@ -15,24 +16,39 @@
         android:id="@+id/btntext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:background="@drawable/btn1"
-        android:layout_marginBottom="5dp"
-        android:textAllCaps="false"
+        android:textSize="24sp"
+        android:background="@drawable/btn5"
+        android:elevation="100dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="true"
         android:text="SetText" />
+<Button
+        android:id="@+id/btnCheckRadio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:textSize="24sp"
+        android:background="@drawable/btn5"
+        android:layout_marginBottom="10dp"
+
+        android:elevation="100dp"
+        android:textAllCaps="true"
+        android:text="CeckBox and Radio" />
 
     <Button
         android:id="@+id/btnimage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAllCaps="false"
+        android:elevation="100dp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="15dp"
         android:textColor="@color/white"
-        android:background="@drawable/btn6"
-        android:textSize="30sp"
-        android:text="SetImage" />
+        android:background="@drawable/btn10"
+        android:textSize="24sp"
+        android:text="Set Image" />
 
     <TextView
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
