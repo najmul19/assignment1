@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".check_box_radio_button">
+
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn6"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:text="Registration form" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#A8A2A2"
+
+        android:text="Gender:" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn5"
+            android:layout_marginBottom="5dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="match_parent"
+            android:background="@drawable/btn5"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#A8A2A2"
+
+        android:text="Courses:" />
+
+    <CheckBox
+        android:id="@+id/milk"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@drawable/btn5"
+        android:text="Mobile applications" />
+
+    <CheckBox
+        android:id="@+id/sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn5"
+        android:text="Web applications" />
+
+    <CheckBox
+        android:id="@+id/water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn5"
+        android:text="Machine learning" />
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn5"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:elevation="100dp"
+
+        android:text="Button" />
+
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn5"
+        android:padding="10dp"
+        android:textColor="#5A5555"
+        android:text="Welcome" />
+
+
+
+
+</LinearLayout>
