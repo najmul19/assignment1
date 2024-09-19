@@ -31,24 +31,22 @@ public class check_box_radio_button extends AppCompatActivity {
         radioGroup = findViewById(R.id.radioGrp);
 
         btn1.setOnClickListener(v -> {
-            // Reset StringBuilder for each button click
+
             StringBuilder s = new StringBuilder();
 
-            // Check if any RadioButton is selected
+
             int selected = radioGroup.getCheckedRadioButtonId();
             if (selected == -1) {
-                // No RadioButton selected, show a message
+
                 Toast.makeText(this, "Please select a gender.", Toast.LENGTH_SHORT).show();
                 title2.setText("Please select a gender.");
                 return;
             }
 
-            // Get selected RadioButton text
             gender = findViewById(selected);
             String value = gender.getText().toString();
             s.append("You have selected: ").append(value).append("\n");
 
-            // Check if at least one CheckBox is selected
             if (milk.isChecked() || sugar.isChecked() || water.isChecked()) {
                 if (milk.isChecked()) {
                     String val = milk.getText().toString();
@@ -63,13 +61,12 @@ public class check_box_radio_button extends AppCompatActivity {
                     s.append(val).append(" is selected\n");
                 }
             } else {
-                // No CheckBox selected, show a message
+
                 Toast.makeText(this, "Please select at least one item.", Toast.LENGTH_SHORT).show();
                 title2.setText("Please select at least one course.");
                 return;
             }
 
-            // Display the final result in the TextView
             title2.setText(s.toString());
         });
     }
