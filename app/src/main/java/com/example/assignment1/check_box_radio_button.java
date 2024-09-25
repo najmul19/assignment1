@@ -68,6 +68,10 @@ public class check_box_radio_button extends AppCompatActivity {
             }
 
             title2.setText(s.toString());
+            radioGroup.clearCheck();
+            milk.setChecked(false);
+            sugar.setChecked(false);
+            water.setChecked(false);
         });
     }
 }

@@ -14,7 +14,7 @@ public class home extends AppCompatActivity {
     //change 1git
     // change 2
 
-    private Button btnText,btnImage,btnCheckRadio;
+    private Button btnText,btnImage,btnCheckRadio,btnSeekSwitchRatting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,8 @@ public class home extends AppCompatActivity {
         btnText = findViewById(R.id.btntext);
         btnImage = findViewById(R.id.btnimage);
         btnCheckRadio = findViewById(R.id.btnCheckRadio);
+
+        btnSeekSwitchRatting = findViewById(R.id.btnSeekbarRatingBarSwitch);
 
         btnText.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
@@ -35,6 +37,10 @@ public class home extends AppCompatActivity {
         });
         btnCheckRadio.setOnClickListener(v -> {
             Intent intent = new Intent(this, check_box_radio_button.class);
+            startActivity(intent);
+        });
+        btnSeekSwitchRatting.setOnClickListener(v -> {
+            Intent intent = new Intent(this, seekBar.class);
             startActivity(intent);
         });
     }
