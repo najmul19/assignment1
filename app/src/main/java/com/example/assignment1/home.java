@@ -14,7 +14,7 @@ public class home extends AppCompatActivity {
     //change 1git
     // change 2
 
-    private Button btnText,btnImage,btnCheckRadio,btnSeekSwitchRatting;
+    private Button btnText,btnImage,btnCheckRadio,btnSeekSwitchRatting,formANdRegexValidation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,7 @@ public class home extends AppCompatActivity {
         btnText = findViewById(R.id.btntext);
         btnImage = findViewById(R.id.btnimage);
         btnCheckRadio = findViewById(R.id.btnCheckRadio);
+        formANdRegexValidation = findViewById(R.id.btnFormRegex);
 
         btnSeekSwitchRatting = findViewById(R.id.btnSeekbarRatingBarSwitch);
 
@@ -43,5 +44,11 @@ public class home extends AppCompatActivity {
             Intent intent = new Intent(this, seekBar.class);
             startActivity(intent);
         });
+
+        formANdRegexValidation.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RegexValidation.class);
+            startActivity(intent);
+        });
+
     }
 }

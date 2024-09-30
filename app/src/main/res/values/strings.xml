@@ -2,4 +2,8 @@
     <string name="app_name">assignment1</string>
 
     <string name="login_btn_name">Login</string>
+    <string name="hello_world">Hello World</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="textview_is_cleared">TextView is Cleared!!</string>
+    <string name="student_information">Student Information</string>
 </resources>
