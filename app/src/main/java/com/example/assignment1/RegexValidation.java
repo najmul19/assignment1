@@ -143,7 +143,7 @@ public class RegexValidation extends AppCompatActivity {
                 phone.setText("");
                 pass.setText("");
                 deptSpinner.setSelection(0); // Reset the spinner to the first item
-
+//Gone
 
                 inputlayout.setVisibility(View.GONE);
                 outputlayout.setVisibility(View.VISIBLE);
