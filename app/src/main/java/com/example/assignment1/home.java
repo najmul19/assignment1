@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class home extends AppCompatActivity {
 
-    private Button btnText,btnImage,btnCheckRadio,btnSeekSwitchRatting,formANdRegexValidation;
+    private Button btnText,btnImage,btnCheckRadio,btnSeekSwitchRatting,formANdRegexValidation,btnCustomListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,8 @@ public class home extends AppCompatActivity {
         formANdRegexValidation = findViewById(R.id.btnFormRegex);
 
         btnSeekSwitchRatting = findViewById(R.id.btnSeekbarRatingBarSwitch);
+        btnCustomListView = findViewById(R.id.btnCustomListViewId);
+
 
         btnText.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
@@ -42,6 +44,10 @@ public class home extends AppCompatActivity {
 
         formANdRegexValidation.setOnClickListener(v -> {
             Intent intent = new Intent(this, RegexValidation.class);
+            startActivity(intent);
+        });
+        btnCustomListView.setOnClickListener(v -> {
+            Intent intent = new Intent(this, cutom_list_view.class);
             startActivity(intent);
         });
 
