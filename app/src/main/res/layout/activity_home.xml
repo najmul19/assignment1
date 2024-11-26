@@ -25,8 +25,9 @@
 
             android:padding="10dp">
 
+
             <Button
-                android:id="@+id/btnCustomListViewId"
+                android:id="@+id/btnExpandebleListViewId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -36,6 +37,19 @@
                 android:layout_marginBottom="10dp"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
+                android:text="Expandable List" />
+
+            <Button
+                android:id="@+id/btnCustomListViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:background="@drawable/btn_plan"
+                android:elevation="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
                 android:text="Custom List" />
 
     <Button

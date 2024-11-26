@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">assignment1</string>
 
+
+    <string name="title">This is Expandable CardView Title</string>
+    <string name="dis">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
     <string name="login_btn_name">Login</string>
     <string name="hello_world">Hello World</string>
     <string name="sign_up">Sign Up</string>
     <string name="textview_is_cleared">TextView is Cleared!!</string>
     <string name="student_information">Student Information</string>
+
     <string-array name="name">
         <item>Argentina</item>
         <item>Afghanistan</item>
